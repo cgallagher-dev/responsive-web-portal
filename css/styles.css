@@ -1,0 +1,214 @@
+/* styles for liquor inventory system */
+
+/* basic body styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+
+/* navbar styling */
+.navbar {
+    background-color: #343a40 !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #ffc107 !important;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    padding: 8px 15px !important;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    background-color: #495057;
+    border-radius: 4px;
+}
+
+/* main container */
+.container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+/* jumbotron welcome section */
+.jumbotron {
+    background-color: #343a40;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.jumbotron h1 {
+    color: #ffc107;
+}
+
+/* cards */
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.card-title {
+    color: #343a40;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #666;
+}
+
+/* table styles */
+.table-responsive {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+    background-color: #343a40;
+    color: #ffc107;
+    border: none;
+    padding: 12px;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+.table tbody td {
+    vertical-align: middle;
+    padding: 10px;
+}
+
+/* stock level badges */
+.stock-badge {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.stock-high {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.stock-medium {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.stock-low {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* type badges */
+.type-badge {
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.type-whiskey { background: #8b4513; color: white; }
+.type-vodka { background: #87ceeb; color: #333; }
+.type-rum { background: #cd853f; color: white; }
+.type-gin { background: #90ee90; color: #333; }
+.type-lager { background: #ffd700; color: #333; }
+.type-stout { background: #2f2f2f; color: white; }
+.type-cider { background: #ff6b6b; color: white; }
+.type-liqueur { background: #9370db; color: white; }
+.type-wine { background: #722f37; color: white; }
+.type-other { background: #6c757d; color: white; }
+
+/* action buttons in tables */
+.btn-action {
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    margin: 2px;
+}
+
+/* modal styles */
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+    border-top: 1px solid #dee2e6;
+}
+
+/* form styling */
+.form-control {
+    border-radius: 4px;
+    padding: 8px 12px;
+}
+
+.form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 2px rgba(255, 193, 7, 0.25);
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* user avatar in table */
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.no-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+}
+
+/* datatables customization */
+.dataTables_wrapper .dataTables_filter input {
+    border-radius: 4px;
+    padding: 6px 12px;
+    border: 1px solid #ced4da;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #343a40 !important;
+    border-color: #343a40 !important;
+    color: white !important;
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+    .jumbotron h1 {
+        font-size: 1.8rem;
+    }
+    
+    .btn-action {
+        padding: 4px 8px;
+        font-size: 0.75rem;
+    }
+    
+    .table-responsive {
+        padding: 10px;
+    }
+}
